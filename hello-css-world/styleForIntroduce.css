@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --paddingCus: 14px 20px;
+    --color1: aqua;
+    --color2: red;
+    --color3: #93D3F4;
+    --sizeDesc: 30px;
+}
+
+.boxNav {
+    background-color: var(--color2);
+    font-size: var(--sizeDesc);
+    overflow: hidden;
+}
+
+.boxNav a {
+    display: block;
+    text-decoration: none;
+    padding: var(--paddingCus);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: yellow;
+    float: left;
+}
+
+.boxNav a:hover {
+    color: var(--color3);
+    border: 2px;
+    border-color: var(--color3);
+    border-style: solid;
+    font-size: 31px;
+}
+
+
+.descP1,
+.descP2,
+.descP3,
+.descP4,
+.descP5,
+.descP6 {
+    padding: var(--paddingCus);
+}
+
+.selec a {
+    text-decoration: none;
+    display: block;
+    color: var(--color2);
+    text-align: center;
+    font-size: var(--sizeDesc);
+    background-color: var(--color1);
+}
+
+.selec a:hover {
+    font-size: 50px;
+    color: var(--color3);
+    background-color: var(--color1);
+    border-radius: 2%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--color3);
+}
+
+#typesVari,
+#typesAbsolute,
+#typesRelative {
+    padding-left: 50px;
+}
+
+.boxInclude,
+.prio,
+.unit,
+.vari,
+.pseudoClass,
+.pseudoEmlement {
+    padding: var(--paddingCus);
+    font-size: var(--sizeDesc);
+    background-color: var(--color1);
+}
+
+#titleP1,
+#titleP2,
+#titleP3,
+#titleP4,
+#titleP5,
+#titleP6 {
+    text-align: center;
+    color: var(--color2);
+}
+#left_side {
+    flex: 50%;
+}
+#right_side {
+    flex: 50%;
+}
+#flex_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer {
+    padding: var(--paddingCus);
+    background-color: black;
+    font-size: 20px;
+}
+.in4footer {
+    padding: var(--paddingCus);
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    border: 10px;
+    border-style: groove;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.in4footer > a {
+    text-decoration: none;
+    color: black;
+}
+.in4footer > a:hover {
+    font-size: 21px;
+    color: var(--color2);
+    font-style: italic;
+}
+
+@media(max-width: 800px) {
+    #left_side, #right_side {
+        flex: 100%;
+    }
+    #flex_container {
+        display: flex;
+        padding-left: 0px;
+    }
+
+}
+
+
+

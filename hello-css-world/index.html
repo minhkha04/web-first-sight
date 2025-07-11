@@ -1,0 +1,153 @@
+<!-- 
+ Include 3 ways
+ Internal use in file HTML
+ External create file css and connect to it (line 12 use to connect file css)
+ Inline
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Introduce CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleForIntroduce.css">
+</head>
+
+<body>
+    <nav class="boxNav">
+        <a href="#titleP1"><span>Introduce</span></a>
+        <a href="#selection"><span>Selection</span></a>
+        <a href="#titleP2"><span>Priority</span></a>
+        <a href="#titleP3"><span>Variable</span></a>
+        <a href="#titleP4"><span>Units</span></a>
+        <a href="#titleP5"><span>Pseudo Class</span></a>
+        <a href="#titleP6"><span>Pseudo Emlement</span></a>
+        <a href="#flexbox"><span>Flex Box</span></a> 
+    </nav>
+
+
+
+    <div class="boxInclude">
+        <h2 id="titleP1">Include 3 ways</h2>
+        <div class="descP1">
+            <ol>
+                <li>Internal use in file HTML</li>
+                <li>External create file css and connect to it (line 12 use to connect file css)</li>
+                <li>Inline</li>
+                <li>Use <|ink rel="stylesheet" href="address file" to inport file css</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="selec">
+        <a href="cssSelection.html">
+            <h2 id="selection">Selection when use internal and external</h2>
+        </a>
+    </div>
+
+    <div class="prio">
+        <!-- Priority -->
+        <h2 id="titleP2">Priority style in External and Inline</h2>
+        <div class="descP2">
+            <ul>
+                <li title="prioritize : ưu tiên">Don't have prioritize between external and internal, selection which is
+                    used last will be choose</li>
+                <li>inline - 1000</li>
+                <li>#id - 100</li>
+                <li>.class - 10</li>
+                <li>tag - 1</li>
+            </ul>
+        </div>
+    </div>
+    <div class="vari">
+        <h2 id="titleP3">Variable</h2>
+        <div class="descP3">
+            <ul>
+                <li>Use :root { --name: } to create</li>
+                <li>
+                    <p>Tow types variable</p>
+                    <ol id="typesVari">
+                        <li>Global (create in file css or in tag style)</li>
+                        <li>Local (create attribute)</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="unit">
+        <h2 id="titleP4">Units</h2>
+        <div class="descP4">
+            <ol id="flex_container">
+                <li id="left_side">
+                    <p title="tuyệt đối"><strong>Absolute units</strong></p>
+                    <ul id="typesAbsolute">
+                        <li><strong>px</strong></li>
+                        <li>pt</li>
+                        <li>cm</li>
+                        <li>mm</li>
+                        <li>inch</li>
+                        <li>pc</li>
+                    </ul>
+                </li>
+                <li id="right_side">
+                    <p title="tương đối"><strong>Relative units</strong></p>
+                    <ul id="typesRelative">
+                        <li title="depend on tag"><strong>%</strong></a></li>
+                        <li title="depend on html, if html is defined with 20px, 1rem = 20px, Xrem = X*20 px">
+                            <strong>rem</strong>
+                        </li>
+                        <li title="same rem but depend on tags nearly it"><strong>em</strong></li>
+                        <li title="depend on the view"><strong>vw</strong></li>
+                        <li title="depend on the view"><strong>vh</strong></li>
+                        <li>vmin</li>
+                        <li>vmax</li>
+                        <li>ex</li>
+                        <li>ch</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="pseudoClass">
+        <h2 id="titleP5">Pseudo Class</h2>
+        <div class="descP5">
+            <ul>
+                <li>:root</li>
+                <li>:hover</li>
+                <li>:active</li>
+                <li>:first-child</li>
+                <li>:last-child</li>
+            </ul>
+        </div>
+    </div>
+    <div class="pseudoEmlement">
+        <h2 id="titleP6">Pseudo emlement</h2>
+        <div class="descP6">
+            <ul>
+                <li>::before</li>
+                <li>::after</li>
+                <li>::first-letter</li>
+                <li>::first-line</li>
+                <li>::selection</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="selec">
+        <a href="flexbox.html">
+            <h2 id="flexbox">Flex Box</h2>
+        </a>
+    </div>
+
+    <footer>
+        <div class="in4footer">
+            <p>Create by <strong><span style="font-style: italic; color: red;">Minh Kha</span></strong></p>
+            <a href="https://www.facebook.com/minhkha.1606/">Click here to contact</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+header .navbar .navbar-nav .nav-link {
+  position: relative;
+}
+
+header .navbar .navbar-nav .nav-link::before {
+  position: absolute;
+  content: "";
+  background-color: #35a22c;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  transition: all 0.5s;
+}
+
+header .navbar .navbar-nav .nav-link:hover,
+header .navbar .navbar-nav .nav-link:hover::before {
+  color: #35a22c !important;
+  width: 100%;
+}
+
+header .navbar .navbar-nav .active::before {
+  width: 100%;
+}
+
+header .navbar .navbar-nav .active {
+  color: #35a22c !important;
+}
+
+.carousel .carousel-indicators button {
+  background-color: gray !important;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  bottom: 90px;
+  position: relative;
+}
+
+.carousel .carousel-indicators button.active {
+  background-color: #35a22c !important;
+}
+
+.carousel-caption {
+  background-color: rgba(39, 43, 54, 0.5);
+  width: 100%;
+  height: 100%;
+  display: block !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  color: white;
+}
+
+.carousel .carousel-inner .carousel-content img {
+  width: 200px;
+  height: 200px;
+}
+
+.carousel .carousel-inner .carousel-content h1 {
+  font-size: 80px;
+}
+.myimg .heading h2,
+.project .heading h2 {
+  font-size: 70px;
+}
+
+.project .heading p {
+  font-size: 30px;
+}
+
+.carousel .carousel-inner .carousel-content p {
+  font-size: 40px;
+}
+
+.project .project_content .nav-item .active {
+  background-color: #35a22c;
+  border: none !important;
+  color: white !important;
+}
+
+.project .project_content .nav-item button {
+  border: 1px solid black;
+  font-size: 30px;
+  color: black;
+  width: 204px;
+}
+
+.project .project_content .card_item {
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* animation-name: zoomOut;
+    animation-duration: 1.5s; */
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.project .project_content .card_item img {
+  border-radius: 30px 30px 0 0;
+}
+
+.project .project_content .card_item .descript {
+  border: 2px solid transparent;
+  border-radius: 0 0 30px 30px;
+  border-top: none;
+  min-height: 163px;
+  transition: all 0.5s;
+}
+
+.project .project_content .card_item:hover .descript h3 {
+  color: #35a22c;
+}
+
+.project .project_content .card_item:hover .descript {
+  border-color: #35a22c;
+}
+
+.project .project_content .col-4 {
+  width: 350px;
+}
+
+.fill {
+  background-color: rgba(39, 43, 54, 0.5);
+  position: absolute;
+  z-index: -999;
+  color: red;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.myimg {
+  background: url(./../img/3.jpg) center / cover no-repeat;
+  padding: 100px 0 800px;
+  background-attachment: fixed;
+}
+.myimg .fillter {
+  background: rgba(2, 2, 2, 0.65);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+}
+.myimg .available {
+  top: 450px;
+}
+.myimg .skill .crad {
+  background: rgba(255, 252, 252, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.myimg .skill .crad i {
+  font-size: 50px;
+  padding: 50px 0px 30px;
+}
+.myimg .skill .crad p {
+  font-size: 20px;
+  padding: 30px;
+}
+.myimg .skill .crad:hover {
+  background-color: black;
+  border-color: white;
+}
+.achivement {
+  height: 50vh;
+}
+.achivement .content {
+  top: 270px;
+}
+.achivement .content .overview {
+  background: rgba(255, 252, 252, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 430px;
+}
+.achivement .content .cetifaction img {
+  width: 120px;
+}
+.achivement .pic {
+  background: url(/assets/img/memphis_3.png) no-repeat;
+  background-position: bottom left;
+  background-size: 50% auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+footer {
+  padding: 50px;
+  background-color: black;
+}
+
+footer .contact .item {
+  border: 2px solid gray;
+  border-radius: 100%;
+  text-align: center;
+  padding: 10px;
+}
+footer .contact .item i {
+  font-size: 20px;
+  min-width: 30px;
+}
+
+footer .contact .item:hover,
+footer .contact .item:hover i {
+  color: #35a22c !important;
+  border-color: #35a22c;
+}
+footer .line {
+  background-color: gray;
+  width: 100%;
+  height: 1px;
+}
+
+@media screen and (min-width: 1400px) {
+  .achivement .cetifaction .row {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .myimg .available {
+    top: 700px;
+  }
+  .myimg {
+    height: 1400px;
+  }
+  .myimg .skill .crad {
+    margin-top: 20px;
+  }
+  .achivement .cetifaction .row {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .myimg .available {
+    top: 850px;
+  }
+  .myimg {
+    height: 1700px;
+  }
+  .achivement {
+    height: 720px;
+    align-items: center;
+  }
+  .achivement .content {
+    top: 340px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar .container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  header .navbar .navbar-nav .nav-link {
+    margin: 0 !important;
+  }
+  .project .project_content .nav {
+    height: 170px;
+  }
+  .myimg .available {
+    top: 940px;
+  }
+  .myimg {
+    height: 1850px;
+  }
+  .achivement {
+    height: 820px;
+    align-items: center;
+  }
+  .achivement .content {
+    top: 420px;
+  }
+  .achivement .cetifaction .row {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner .carousel-content h1 {
+    font-size: 50px;
+  }
+  .carousel .carousel-inner .carousel-content p {
+    font-size: 30px;
+  }
+  .myimg .available {
+    top: 1000px;
+  }
+  .myimg {
+    height: 1970px;
+  }
+  .achivement {
+    height: 960px;
+    align-items: center;
+  }
+  .achivement .content {
+    top: 500px;
+  }
+  .achivement .content .cetifaction img {
+    width: 120px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .project .heading h2,
+  .carousel .carousel-inner .carousel-content h1 {
+    font-size: 30px;
+  }
+  .project .heading p,
+  .carousel .carousel-inner .carousel-content p {
+    font-size: 20px;
+  }
+  .project .project_content .nav {
+    height: 290px;
+  }
+  .carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    bottom: 50px;
+  }
+  .carousel .reposiveMobile {
+    bottom: 100px !important;
+  }
+  .myimg .available {
+    top: 1000px;
+  }
+  .myimg {
+    height: 1970px;
+  }
+  .achivement {
+    height: 1100px;
+    align-items: center;
+  }
+  .achivement .content {
+    top: 550px;
+  }
+}

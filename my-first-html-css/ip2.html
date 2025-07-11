@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Galaxy Z Fold6 5G</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            width: 80%;
+            max-height: 1500px;
+            height: 100vh;
+            margin: 10px auto;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100px 50px 500px;
+            grid-template-areas:
+                "header header header"
+                "name name name"
+                "pic desc desc";
+        }
+
+        .header {
+            grid-area: header;
+            text-align: center;
+            height: 100px;
+            padding: 20px;
+            background-image: url(imgUse/headerbackground.jpg);
+            background-size: 100px;
+            background-repeat: repeat;
+            color: cornsilk;
+        }
+
+        h1 {
+            font-size: 250%;
+            text-align: center;
+        }
+
+        .namephone {
+            grid-area: name;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .pic {
+            grid-area: pic;
+            text-align: center;
+
+        }
+
+        .imgUse {
+            width: 80%;
+        }
+
+        .desc {
+            grid-area: desc;
+        }
+
+        .info {
+            margin-top: 5vh;
+            margin-left: 5vh;
+            font-size: 120%;
+        }
+
+        @media (max-width: 900px) {
+            .info {
+                margin-top: 10px;
+                margin-left: 20px;
+                font-size: 120%;
+            }
+        }
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 200%;
+            }
+            .container {
+                width: 100%;
+                margin: 0;
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px 50px 300px 500px;
+                grid-template-areas: 
+                "header"
+                "name"
+                "pic"
+                "desc";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header item">
+            <h1>EmKay Store</h1>
+        </div>
+        <div class="namephone item">
+            <h2>iPhone 16 Pro</h2>
+        </div>
+        <div class="pic item">
+            <img class="imgUse" src="imgUse/ip2.png" alt="iPhone 16 Pro">
+        </div>
+        <div class="desc item">
+            <div class="info">
+                <p><strong>Price:</strong> 1.177$</p>
+                <p><strong>Camera:</strong> Main 48 MP & Secondary 48 MP, 12 MP</p>
+                <p><strong>Operating System:</strong> iOS 18</p>
+                <p><strong>GPU:</strong> Apple GPU 6</p>
+                <p><strong>Ram:</strong> Updating</p>
+                <p><strong>Storage capacity:</strong> 128 GB</p>
+                <p><strong>Battery capacity:</strong> Updating</p>
+                <p><strong>Release date:</strong> 09/2024</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

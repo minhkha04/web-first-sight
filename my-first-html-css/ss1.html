@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Galaxy Z Fold6 5G</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            width: 80%;
+            max-height: 1500px;
+            height: 100vh;
+            margin: 10px auto;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100px 50px 500px;
+            grid-template-areas:
+                "header header header"
+                "name name name"
+                "pic desc desc";
+        }
+
+        .header {
+            grid-area: header;
+            text-align: center;
+            height: 100px;
+            padding: 20px;
+            background-image: url(imgUse/headerbackground.jpg);
+            background-size: 100px;
+            background-repeat: repeat;
+            color: cornsilk;
+        }
+
+        h1 {
+            font-size: 250%;
+            text-align: center;
+        }
+
+        .namephone {
+            grid-area: name;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .pic {
+            grid-area: pic;
+            text-align: center;
+
+        }
+
+        .imgUse {
+            width: 80%;
+        }
+
+        .desc {
+            grid-area: desc;
+        }
+
+        .info {
+            margin-top: 5vh;
+            margin-left: 5vh;
+            font-size: 120%;
+        }
+
+        @media (max-width: 900px) {
+            .info {
+                margin-top: 10px;
+                margin-left: 20px;
+                font-size: 120%;
+            }
+        }
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 200%;
+            }
+            h2 {
+                font-size: 120%;
+            }
+            .container {
+                width: 100%;
+                margin: 0;
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px 50px 300px 500px;
+                grid-template-areas: 
+                "header"
+                "name"
+                "pic"
+                "desc";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header item">
+            <h1>EmKay Store</h1>
+        </div>
+        <div class="namephone item">
+            <h2>Samsung Galaxy Z Fold6 5G</h2>
+        </div>
+        <div class="pic item">
+            <img class="imgUse" src="imgUse/ss1.jpg" alt="Samsung Galaxy Z Fold6 5G">
+        </div>
+        <div class="desc item">
+            <div class="info">
+                <p><strong>Price:</strong> 1.644$</p>
+                <p><strong>Camera:</strong> Main 50 MP & Sub 12 MP, 10 MP</p>
+                <p><strong>Operating System:</strong> Android</p>
+                <p><strong>GPU:</strong> Adreno 750</p>
+                <p><strong>Ram:</strong> 12 GB</p>
+                <p><strong>Storage capacity:</strong> 256 GB</p>
+                <p><strong>Battery capacity:</strong> 4400 mAh</p>
+                <p><strong>Release date:</strong> 07/2024</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

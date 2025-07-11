@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: red;
+
+}
+.item {
+    width: 33%;
+    text-align: center;
+}
+.image {
+    width: 90%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media(max-width : 800px) {
+    *{
+        background-color: rgb(179, 245, 210);
+    }
+    .item {
+        width: 50%;
+       
+    }
+}

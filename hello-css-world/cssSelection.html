@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selection</title>
+    <link rel="stylesheet" href="styleForCssSelection.css">
+    <style>
+        .box2 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ID and Class</h1>
+    <h1 id="pink">Use ID to style, use # + id_name to style in file css</h1>
+    <!-- ID only use for 1 object -->
+    <!-- If chose more than 1 object to have same style, using class -->
+    <h1 class="green">Line use class to style</h1>
+    <p class="green">Use class to style, in file css use . + class_name to style</p>
+
+    <br>
+    <h1 class="green red">Use .class.class Each class defined by space in attribute class</h1>
+    <p class="red green">You can write in any other</p>
+    <h5><strong>Can use many class</strong></h5>
+
+    <br>
+    <!--  -->
+    <div class="box">
+        <p class="green">.name .name to slection tags in div</p>
+    </div>
+
+    <br>
+    <!--  -->
+    <p>Can use * to selection all tags</p>
+    <p>emlement.class this use to chose tag with class</p>
+    <h2 class="green">This line use to emlement.class</h2>
+    
+    <br>
+    <!--  -->
+    <p>Can use common to collect tag with same style</p>
+
+    <br>
+    <!--  -->
+    <h2>></h2>
+    <div class="con">
+        <h2 class="title">Lorem ipsum dolor sit amet.</h2>
+        <div>
+            <h2 class="title">Lorem ipsum dolor sit amet.</h2>
+        </div>
+    </div>
+    
+    <br>
+    <!--  -->
+    <h2>+</h2>
+    <h2 class="under">Use + to selection under this tag with same class</h2>
+    <h2 class="under">Use + to selection under this tag</h2>
+    <h2 class="under">out div</h2>
+    <div>
+        <h2 class="under">in div</h2>
+    </div>
+    <h2 class="under">out div</h2>
+    <h3></h3>
+    <h2 class="under">Use + to selection under this tag</h2>
+
+    <br>
+    <!--  -->
+    <h2>~</h2>
+    <h2 class="underAll">Can selection all tags under this line with same class</h2>
+    <h2 class="underAll green">Can selection all tags under this line with same class</h2>
+    <h3></h3>
+    <h2 class="underAll">Lorem ipsum dolor sit amet.</h2>
+    <h2 class="underAll">out div</h2>
+    <div>
+        <h2 class="underAll">in div</h2>
+    </div>
+    <h2 class="underAll">out div</h2>
+    
+   
+</body>
+
+</html>

@@ -1,0 +1,577 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    width: 100%;
+}
+
+
+#header {
+    width: 100%;
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+.fa-bars:hover,
+#nav .subnav li:hover>a,
+#nav li a:hover {
+    color: black;
+    background-color: gray;
+}
+
+#nav .subnav a {
+    padding: 0 16px;
+    color: black;
+    display: block;
+    background-color: white;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    box-shadow: 0 0 1px rgb(0, 0, 0, 0.3);
+    top: 46px;
+    left: 0;
+    z-index: 2;
+}
+
+#nav {
+    display: inline-block;
+
+}
+
+.fa-solid {
+    font-size: 17px;
+}
+#header .searchButton {
+    float: right;
+
+}
+
+.searchButton .fa-light {
+    font-size: 22px;
+    color: red;
+    line-height: 46px;
+    padding: 0 16px;
+}
+
+#header .fa-light:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#slider {
+    /* height: 1000px; */
+    margin-top: 46px;
+    background: url('/assets/img/chicago.jpg') top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+    z-index: -1;
+}
+
+#slider .text-content {
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slider .text-content h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.content {
+    width: 100%;
+}
+
+.content .content-section {
+    width: 800px;
+    max-width: 100%;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .content-section .content-heading,
+.content .content-section .content-sub-heading {
+    text-align: center;
+}
+
+.content .content-section .content-heading {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 8px;
+}
+
+.content .content-section .content-sub-heading {
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    color: gray;
+}
+
+.content .content-section p {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.content .members {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "member1 member2 member3";
+}
+
+.content .member1 {
+    display: grid;
+    grid-area: member1;
+
+}
+
+.content .member2 {
+    display: grid;
+    grid-area: member2;
+
+}
+
+.content .member3 {
+    display: grid;
+    grid-area: member3;
+
+}
+
+.content .member img {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 4px;
+}
+
+.content .members .name {
+    text-align: center;
+}
+
+.tour {
+    width: 100%;
+    background-color: black;
+    margin-top: 50px;
+    color: white;
+    height: 800px;
+}
+
+
+.tour ul {
+    background-color: white;
+    color: black;
+    margin-top: 40px;
+}
+
+.ticket li {
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style: none;
+}
+
+.sold_out {
+    color: black;
+    background-color: red;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.quantity {
+    background-color: black;
+    position: absolute;
+    right: 45px;
+    bottom: 5px;
+    padding: 5px 10px;
+    border-radius: 100%;
+}
+
+.not_yet {
+    position: relative;
+    z-index: 0;
+}
+
+.address_tour {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+
+.address_tour .address {
+    margin-top: 20px;
+    color: black;
+    display: inline-block;
+    background-color: white;
+}
+
+.address_tour .address img {
+    width: 100%;
+}
+
+.address1 {
+    width: 32%;
+}
+
+.address2 {
+    width: 32%;
+}
+
+.address3 {
+    width: 32%;
+}
+
+.address .content {
+    padding: 0 10px;
+}
+
+.address .content button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+}
+
+.address .content span {
+    color: #757575;
+}
+
+.address .content h5 {
+    margin-top: 10px;
+}
+
+.address .content button:hover {
+    background-color: #757575;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal.open {
+    display: flex;
+}
+.modal-container {
+    width: 900px;
+    max-width: calc(100% -32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+
+}
+
+.close i {
+    position: absolute;
+    font-size: 30px;
+    right: 0;
+    color: red;
+    padding: 10px;
+}
+
+.modal-header {
+    display: flex;
+    height: 100px;
+    background-color: #009683;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.modal-header i {
+    font-size: 40px;
+}
+
+.modal-body {
+    height: 50%;
+    background-color: white;
+    padding: 0px 10px;
+    border: 1px solid white;
+}
+
+.ticket,
+.email {
+    margin: 10px 0px 10px 0px;
+}
+
+.modal-body input {
+    margin: 10px 0px 10px 0px;
+}
+
+.modal-body input {
+    width: 100%;
+    height: 50px;
+}
+
+.modal-body button {
+    color: white;
+    width: 100%;
+    height: 50px;
+    background-color: #009683;
+    border: none;
+    text-transform: uppercase;
+}
+
+.close .fa-solid:hover,
+.modal-footer button:hover,
+.modal-body button:hover,
+.contact-address .send:hover {
+    color: black;
+    background-color: #757575;
+    cursor: pointer;
+}
+
+.modal-footer {
+    height: 10%;
+    background-color: white;
+    padding: 10px;
+    padding-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+
+.modal-footer p {
+    line-height: 41px;
+}
+.modal-footer button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-500px);
+    } 
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+
+.contact-address {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+}
+.contact-address .item {
+    width: 50%;
+}
+
+.contact-address .infor p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.contact-address .input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.contact-address .input .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-address .input .mess {
+    width: 100%;
+    display: inline;
+}
+.form input {
+    width: 49%;
+}
+.contact-address .send {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+
+}
+
+.contact-address .infor .fa-solid {
+    text-align: center;
+    width: 17px;
+    margin-right: 10px;
+}
+
+.contact-address .input input,
+.contact-address button{
+    margin-top: 10px;
+}
+
+.contact-address .input input {
+    height: 40px;
+}
+
+.contact {
+    height: 400px;
+}
+.map-section img {
+    width: 100%;
+}
+#footer {
+    width: 100%;
+    text-align: center;
+}
+#footer .socials-list a{
+    margin: 0px 2px;
+    color: #000;
+}
+#footer .socials-list a:hover {
+    color: #757575;
+}
+#footer .socials-list {
+    padding: 60px;
+}
+.socials-list a:nth-last-child(1) {
+    font-size: 15px;
+    text-decoration: none;
+}
+.form {
+    width: 100%;
+}
+.fa-bars {
+    display: none;
+    font-size: 22px;
+    color: white;
+    line-height: 46px;
+    padding: 0 16px;
+}
+.mobile-header {
+    display: inline-block;
+}
+/* tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px){
+    .content-section {
+        padding: 0px 16px;
+    }
+}
+/* pc */
+@media screen and (min-width: 1020px){
+
+}
+
+/* mobile */
+@media screen and (max-width: 740px){
+    #header {
+        overflow: hidden;
+    }
+    .content-section {
+        padding: 0px 16px;
+    }
+    #nav {
+        display: block;
+    }
+    #nav > li {
+        display: block;
+    }
+    .searchButton {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+    }
+    .content .members {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .member {
+        width: 100%;
+    }
+    .address_tour {
+        flex-wrap: wrap;
+    }
+    .address {
+        width: 100%;
+    }
+    .tour,
+    .contact {
+        height: max-content;
+        padding: 0px 0px 130px 0px;
+    }
+    .contact-address .item {
+        width: 100%;
+    }
+    .contact-address .input {
+        display: flex;
+    }
+    .form input {
+        width: 100%;
+        display: inline-block;
+    }
+    .with100 {
+        width: 100%;
+    }
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+

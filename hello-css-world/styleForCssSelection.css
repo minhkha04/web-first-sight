@@ -1,0 +1,36 @@
+#pink{
+    color: violet;
+}
+.green {
+    color: green;
+    font-style: italic;
+}
+.green.red {
+    color: red;
+}
+.box .green{
+    color:aqua;
+}
+*{
+    font-size: 20px;
+    
+}
+h2.green{
+    color: blueviolet;
+}
+.green, .green.red {
+    text-decoration: line-through;
+}
+.con > .title{
+    text-decoration: line-through;
+}
+.under + .under {
+    color: burlywood;
+}
+
+.underAll ~ .underAll {
+    color: blueviolet;
+}
+.box2{
+    color: blue;
+}

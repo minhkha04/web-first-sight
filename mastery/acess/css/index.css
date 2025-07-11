@@ -1,0 +1,401 @@
+:root {
+    --primary-color: rgb(65, 65, 136);
+    --second-color: rgb(245, 243, 243);
+    --third-color: orange;
+}
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+/* setup container */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px 0px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 3;
+}
+
+.header_container  .mobile {
+    display: none;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand i {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    border-radius: 100%;
+    border: 1px solid var(--primary-color);
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 7px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+header ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 0px 30px 0px 20px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.banner {
+    background: url('./../images/2.jpg')top center / cover no-repeat;
+    padding-top: 50%;
+}
+
+.welcome {
+    padding: 100px 0px;
+}
+
+.welcome_container {
+    display: flex;
+}
+
+.welcome .picture {
+    background: url('./../images/g1.jpg') top center / cover no-repeat;
+    /* padding-top: 50%; */
+}
+
+.welcome .desrip_wellecome {
+    width: 40%;
+    margin-right: 60px;
+}
+
+.welcome .picture {
+    width: 60%;
+}
+
+.welcome .desrip_wellecome h3 {
+    font-size: 30px;
+}
+
+.welcome .desrip_wellecome p {
+    letter-spacing: 2px;
+    margin-top: 30px;
+    color: rgb(194, 189, 189);
+    font-weight: bold;
+}
+
+.welcome .desrip_wellecome button {
+    margin-top: 30px;
+    background-color: var(--third-color);
+    border: none;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.number {
+    background-color: var(--second-color);
+}
+
+.container_number {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+    flex-wrap: wrap;
+}
+
+.number .item {
+    display: flex;
+    align-items: center;
+
+}
+
+.number .item h1 {
+    font-size: 60px;
+    margin-right: 10px;
+}
+
+.container_icon {
+    padding: 100px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icon .item {
+    margin: 30px 0px;
+    border-radius: 7%;
+    border: 5px solid var(--primary-color);
+    padding: 30px 0px;
+    width: 200px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    width: 23%;
+}
+
+.icon .item i {
+    font-size: 50px;
+}
+
+.icon .item p {
+    margin-top: 25px;
+}
+
+.news {
+    padding: 100px 0px;
+    background-color: var(--second-color);
+    height: 900px;
+}
+
+.news .container_new {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news .lastest_post .container_item {
+    background-color: white;
+}
+
+.news .upcomping_events,
+.news .lastest_post {
+    position: relative;
+}
+
+.news .newsitem {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 20px;
+    background-color: white;
+}
+
+.news .lastest_post img {
+    border-radius: 10px;
+    width: 30%;
+    height: 120px;
+}
+
+.news .lastest_post .descrip {
+    margin-left: 20px;
+}
+
+.news .date {
+    margin: 16px 0px;
+    color: gray;
+}
+
+.news .lastest_post .line {
+    border: 1px solid rgb(199, 195, 195);
+    margin: 0px 20px;
+}
+
+.news .upcomping_events button,
+.news .lastest_post button {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    background-color: var(--third-color);
+    border: none;
+    padding: 10px 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.news .title_news {
+    margin-bottom: 50px;
+}
+
+.news .upcomping_events .newsitem {
+    margin-bottom: 20px;
+}
+
+.news .upcomping_events .time {
+    margin-right: 20px;
+}
+
+.news .upcomping_events .time .date_month {
+    border-radius: 10% 10% 0% 0%;
+    background-color: var(--third-color);
+    text-align: center;
+    color: var(--primary-color);
+    padding: 10px 30px;
+}
+
+.news .upcomping_events .time .year {
+    border-radius: 0% 0% 10% 10%;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+}
+
+.news .upcomping_events .descrip :nth-child(3),
+.news .upcomping_events .descrip :nth-child(5) {
+    color: var(--primary-color);
+}
+
+.news .upcomping_events .descrip :nth-child(4) {
+    color: var(--second-color);
+    font-size: 30px;
+}
+
+.news .upcomping_events .line {
+    height: 5px;
+    width: 1px;
+}
+
+.news .upcomping_events button {
+    bottom: -50px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 100px 0px;
+}
+
+footer i {
+    color: var(--third-color);
+    margin-right: 10px;
+}
+
+footer .descrip {
+    margin-top: 20px;
+}
+
+footer .descrip p {
+    margin-top: 10px;
+}
+
+footer .infor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .line {
+    border: 1px solid gray;
+    width: 100%;
+}
+
+header ul li:hover a {
+    color: var(--second-color);
+    background-color: gray;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: 0px 30px;
+    }
+
+    .news {
+        height: 1600px;
+    }
+
+    .news .container_new {
+        flex-wrap: wrap;
+    }
+
+    .news .reponsive {
+        width: 100%;
+    }
+
+    .upcomping_events {
+        margin-top: 100px;
+    }
+
+    .news .newsitem {
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        margin: 0px 20px;
+    }
+    .header_container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .header_container .brand {
+        width: 50%;
+    }
+    .header_container  .mobile {
+        display: block;
+        font-size: 30px;
+        line-height: 47px;
+        width: 50px;
+    }
+    .header_container nav {
+        display: none;
+        width: 100vw;
+    }
+    header ul li a {
+        padding: 0px;
+    }
+    header ul {
+        display: flex;
+        flex-flow: column;
+    }
+    .welcome .desrip_wellecome {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .welcome_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .welcome .picture {
+        margin-top: 10px;
+        width: 100%;
+        height: 200px;
+    }
+    .container_number {
+        justify-content: center;
+    }
+    .container_number .item{
+        width: 217px;
+    }
+    .icon .item  {
+        width: 45%;
+        margin: 17px 0px 17px 0px;
+    }
+    .news {
+        height: max-content;
+        padding-bottom: 135px;
+    }
+    .news .lastest_post img {
+        width: 100%;
+        height: 100%;
+    }
+    .news .lastest_post .descrip {
+        margin-left: 0px;
+    }
+    .news .upcomping_events .time {
+        margin-bottom: 10px;
+    }
+    footer .reponsive {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .header_container .open {
+        display: block;
+    }
+}
+
