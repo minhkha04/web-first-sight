@@ -16,12 +16,13 @@
     display: flex;
     flex-wrap: wrap;
 }
-@media(max-width : 800px) {
+@media screen and (max-width : 800px) {
     *{
-        background-color: rgb(179, 245, 210);
+        background-color: rgb(213, 179, 245);
     }
     .item {
         width: 50%;
-       
     }
 }
+
+
