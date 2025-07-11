@@ -1,0 +1,46 @@
+.banner {
+  padding: 50px 0px;
+  background-image: url("./../image/product-header-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  @media screen and (max-width: 1024px) {
+    padding: 50px 30px;
+    
+  }
+  .banner_content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .banner_text {
+      width: 50%;
+      h1 {
+        @include styleText($text-title, bold, $primary-color);
+      } 
+      .sub_tittle {
+        @include styleText($text-xl, bold, $second-color);
+        padding: 10px 0px 20px 0px;
+      }
+      .description {
+        @include styleText($text-base, normal, $second-color);
+        padding: 0px 0px 20px 0px;
+      }
+      .banner_group_button {
+        button {
+          &:first-child {
+            @include styleButton($third-color, $primary-color, 2px, $box-shadow-white);
+          }
+          &:last-child {
+            @include styleButton($primary-color, $third-color, 2px, $box-shadow-white);
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .banner_img {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

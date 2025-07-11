@@ -1,0 +1,71 @@
+.product {
+    padding: 50px 0px;
+    @media screen and (max-width: 1024px) {
+        padding: 50px 30px;
+        
+    }
+    .product_content {
+        .product_title {
+            h2 {
+                text-align: center;
+                @include styleText($text-3xl, 700, $second-color, uppercase);
+            }
+        }
+        .product_item {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding-top: 25px;
+            @media  screen and (max-width: 1024px) {
+                grid-template-columns: repeat(2, 1fr);
+                
+            }
+            .card {
+                padding: 25px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border-radius: 10px;
+                animation: my_zoomIn;
+                animation-duration: 2s;
+                opacity: 0;
+                animation-fill-mode: forwards;
+                @for $i from 2 through 6 {
+                    &:nth-child(#{$i}) {
+                        animation-delay: #{($i - 1) * 0.2}s;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+                img {
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                    width: 100%;
+                }
+                .card_title {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                    h2 {
+                        @include styleText($text-3xl, bold, $primary-color);
+                    }
+                }
+                p {
+                    @include styleText($text-lg, bold, $second-color);
+                    margin: 10px 0;
+                }
+                .product_action {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .product_rate {
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                    button {
+                        @include styleButton($primary-color, $third-color, 1px, $box-shadow-white);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@for $i from 2 through 100 {
+    .fs-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+$bootstrap : ("bg-success": #28a745, "bg-danger": #dc3545, "bg-warning": #ffc107);
+@each $key, $value in $bootstrap {
+    .#{$key} {
+        background-color: $value;
+    }
+}

@@ -1,0 +1,57 @@
+header {
+  background-color: $bg;
+  padding: 15px 0;
+  box-shadow: $box-shadow-white;
+  @media screen and (max-width: 1024px) {
+    padding: 15px 30px;
+    width: 100%;
+    
+  }
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header_logo {
+      @include styleText($text-2xl, bold, $primary-color);
+    }
+    .header_nav {
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        li {
+          &.active {
+            &::before {
+              width: 100%;
+            }
+            a {
+              color: $primary-color;
+            }
+          }
+          position: relative;
+          a {
+            color: black;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: -5px;
+            background-color: $primary-color;
+            transition: all 0.5s linear;
+          }
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+            a {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
